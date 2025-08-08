@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRB Industries Interlock Bricks - Chalakudy, Kerala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f4ff',
+                            100: '#e0ecff',
+                            200: '#c7dcff',
+                            300: '#a5c4ff',
+                            400: '#839dff',
+                            500: '#6b7aff',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b'
+                        },
+                        navy: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617'
+                        },
+                        jrb: {
+                            blue: '#1e3a8a',
+                            darkblue: '#1e293b',
+                            lightblue: '#3b82f6',
+                            gray: '#6b7280'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 20px rgba(30, 58, 138, 0.5);
+            }
+
+            to {
+                box-shadow: 0 0 30px rgba(30, 58, 138, 0.8);
+            }
+        }
+
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.9);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 58, 138, 0.9) 50%, rgba(59, 130, 246, 0.8) 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(30, 58, 138, 0.1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.25);
+            border-color: rgba(30, 58, 138, 0.2);
+        }
+
+        .btn-modern {
+            position: relative;
+            overflow: hidden;
+            transform: perspective(1px) translateZ(0);
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        }
+
+        .btn-modern:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-modern:hover:before {
+            left: 100%;
+        }
+
+        .btn-modern:hover {
+            background: linear-gradient(135deg, #1d4ed8, #2563eb);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 58, 138, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-divider {
+            position: relative;
+        }
+
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+            border-radius: 2px;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            min-width: 300px;
+            padding: 16px 24px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 500;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.success {
+            background: linear-gradient(135deg, #059669, #10b981);
+        }
+
+        .notification.error {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+        }
+
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .spinner {
+            border: 2px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 2px solid #1e3a8a;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .logo-container {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Custom styling for JRB brand colors */
+        .jrb-primary {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+        }
+
+        .jrb-secondary {
+            background: linear-gradient(135deg, #1e293b, #334155);
+        }
+
+        .text-jrb-blue {
+            color: #1e3a8a;
+        }
+
+        .bg-jrb-blue {
+            background-color: #1e3a8a;
+        }
+
+        .border-jrb-blue {
+            border-color: #1e3a8a;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header -->
+    <header class="glass-effect fixed w-full top-0 z-50 transition-all duration-300" id="header">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="jrblogo.png" alt="JRB Industries Logo" class="nav-logo">
+                    <div>
+                        <span class="text-2xl font-bold text-white font-serif">JRB Industries</span>
+                        <div class="text-xs text-blue-300 font-medium">TRUSTED PARTNER FOR YOUR PERFECT HOME</div>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home"
+                        class="text-white/90 hover:text-blue-300 font-medium transition-all duration-300 hover:scale-105">Home</a>
+                    <a href="#about"
+                        class="text-white/90 hover:text-blue-300 font-medium transition-all duration-300 hover:scale-105">About
+                        Us</a>
+                    <a href="#products"
+                        class="text-white/90 hover:text-blue-300 font-medium transition-all duration-300 hover:scale-105">Products</a>
+                    <a href="#gallery"
+                        class="text-white/90 hover:text-blue-300 font-medium transition-all duration-300 hover:scale-105">Gallery</a>
+                    <a href="#testimonials"
+                        class="text-white/90 hover:text-blue-300 font-medium transition-all duration-300 hover:scale-105">Testimonials</a>
+                    <a href="#contact"
+                        class="btn-modern text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transform hover:scale-105">Contact
+                        Us</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden glass-effect">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="block px-3 py-2 text-white hover:bg-blue-600/20 rounded-md transition-colors">Home</a>
+                <a href="#about"
+                    class="block px-3 py-2 text-white hover:bg-blue-600/20 rounded-md transition-colors">About Us</a>
+                <a href="#products"
+                    class="block px-3 py-2 text-white hover:bg-blue-600/20 rounded-md transition-colors">Products</a>
+                <a href="#gallery"
+                    class="block px-3 py-2 text-white hover:bg-blue-600/20 rounded-md transition-colors">Gallery</a>
+                <a href="#testimonials"
+                    class="block px-3 py-2 text-white hover:bg-blue-600/20 rounded-md transition-colors">Testimonials</a>
+                <a href="#contact"
+                    class="block px-3 py-2 text-white hover:bg-blue-600/20 rounded-md transition-colors">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 jrb-secondary"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+
+        <!-- Animated particles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-300/30 rounded-full animate-float"></div>
+            <div class="absolute top-3/4 right-1/4 w-3 h-3 bg-blue-300/20 rounded-full animate-float"
+                style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/2 left-3/4 w-1 h-1 bg-blue-300/40 rounded-full animate-float"
+                style="animation-delay: 2s;"></div>
+        </div>
+
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-6">
+
+            <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 animate-slide-up">
+                Building the <span class="text-blue-300">Future</span> of Kerala,<br>
+                <span class="font-serif italic">One Brick at a Time</span>
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto animate-slide-up"
+                style="animation-delay: 0.2s;">
+                High-quality, eco-friendly, and cost-effective interlocking bricks for your dream project.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up"
+                style="animation-delay: 0.4s;">
+                <a href="#contact"
+                    class="btn-modern text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                    Get a Free Quote
+                </a>
+                <a href="#about"
+                    class="border-2 border-blue-300 text-blue-100 font-bold py-4 px-8 rounded-full btn-modern hover:bg-blue-300 hover:text-navy-900 transition-all duration-300 transform hover:scale-105"
+                    style="background: transparent;">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 section-divider">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-4 font-serif">About JRB Industries</h2>
+                <p class="text-lg text-jrb-gray max-w-2xl mx-auto">Crafting excellence in construction materials with
+                    passion and precision</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img src="https://placehold.co/600x500/1e3a8a/ffffff?text=Our+Modern+Factory"
+                        alt="JRB Industries Factory"
+                        class="rounded-2xl shadow-2xl w-full h-96 object-cover border-2 border-blue-100">
+                    <div class="absolute -bottom-8 -right-8 jrb-primary text-white p-6 rounded-xl shadow-xl">
+                        <div class="text-3xl font-bold">15+</div>
+                        <div class="text-sm">Years Experience</div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <p class="text-lg text-navy-700 leading-relaxed">
+                        JRB Industries stands as a beacon of innovation in Kerala's construction landscape. With over a
+                        decade of expertise, we've revolutionized building practices through our premium interlocking
+                        brick solutions.
+                    </p>
+                    <p class="text-lg text-navy-700 leading-relaxed">
+                        Our commitment extends beyond manufacturing – we're building sustainable communities, one
+                        environmentally conscious brick at a time. Every product reflects our dedication to quality,
+                        innovation, and environmental stewardship.
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-6 mt-8">
+                        <div
+                            class="text-center p-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200">
+                            <div
+                                class="w-12 h-12 bg-jrb-blue rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-navy-800">Quality</h4>
+                            <p class="text-sm text-jrb-gray">Uncompromising standards</p>
+                        </div>
+                        <div
+                            class="text-center p-4 rounded-xl bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200">
+                            <div
+                                class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-navy-800">Sustainability</h4>
+                            <p class="text-sm text-jrb-gray">Eco-friendly solutions</p>
+                        </div>
+                        <div
+                            class="text-center p-4 rounded-xl bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200">
+                            <div
+                                class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-navy-800">Service</h4>
+                            <p class="text-sm text-jrb-gray">Customer-first approach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 section-divider">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-4 font-serif">Our Premium Products</h2>
+                <p class="text-lg text-jrb-gray max-w-2xl mx-auto">Innovative solutions for modern construction needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8" id="products-grid">
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-jrb-blue rounded-bl-full flex items-end justify-start pb-2 pl-2">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-800 mb-4 font-serif">Cement Interlocking Bricks</h3>
+                    <p class="text-jrb-gray mb-6 leading-relaxed">Engineered with precision using premium cement and
+                        sand blend, delivering exceptional strength and durability for demanding construction projects.
+                    </p>
+                    <ul class="space-y-2 text-jrb-gray">
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-jrb-blue rounded-full mr-3"></span>Superior compressive strength</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-jrb-blue rounded-full mr-3"></span>Precise
+                            dimensional accuracy</li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-jrb-blue rounded-full mr-3"></span>Enhanced thermal insulation</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-jrb-blue rounded-full mr-3"></span>Rapid
+                            installation process</li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <button class="w-full btn-modern text-white py-3 rounded-lg font-semibold transition-colors"
+                            onclick="openProductModal('cement')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-green-600 rounded-bl-full flex items-end justify-start pb-2 pl-2">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-800 mb-4 font-serif">Soil Interlocking Bricks</h3>
+                    <p class="text-jrb-gray mb-6 leading-relaxed">Crafted from compressed earth and minimal cement,
+                        these eco-conscious bricks offer sustainable building solutions without compromising on quality
+                        or aesthetics.</p>
+                    <ul class="space-y-2 text-jrb-gray">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>100%
+                            eco-friendly materials</li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>Budget-friendly option</li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>Natural temperature regulation
+                        </li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-green-600 rounded-full mr-3"></span>Minimal water absorption</li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <button
+                            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition-colors"
+                            onclick="openProductModal('soil')">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-20 h-20 bg-indigo-600 rounded-bl-full flex items-end justify-start pb-2 pl-2">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a4 4 0 004-4V5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-navy-800 mb-4 font-serif">Customized Bricks</h3>
+                    <p class="text-jrb-gray mb-6 leading-relaxed">Tailored to your vision, our custom interlocking
+                        bricks transform architectural concepts into reality with unlimited possibilities in design and
+                        finish.</p>
+                    <ul class="space-y-2 text-jrb-gray">
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>Bespoke specifications</li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>Extensive color palette</li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>Professional consultation</li>
+                        <li class="flex items-center"><span
+                                class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></span>Architectural excellence</li>
+                    </ul>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <button
+                            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition-colors"
+                            onclick="openProductModal('custom')">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 section-divider">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-4 font-serif">Project Showcase</h2>
+                <p class="text-lg text-jrb-gray max-w-2xl mx-auto">Witness our craftsmanship in action across diverse
+                    projects</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Modern+Residential+Home"
+                        alt="Residential Home"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navy-800/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h4 class="font-bold text-lg">Modern Residential Home</h4>
+                        <p class="text-sm text-blue-100">Eco-friendly family residence</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Commercial+Complex"
+                        alt="Commercial Building"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navy-800/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h4 class="font-bold text-lg">Commercial Complex</h4>
+                        <p class="text-sm text-blue-100">Sustainable business hub</p>
+                    </div>
+                </div>
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg card-hover md:col-span-2 lg:col-span-1">
+                    <img src="https://placehold.co/600x400/6366f1/ffffff?text=Designer+Boundary+Wall"
+                        alt="Boundary Wall"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-navy-800/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    </div>
+                    <div
+                        class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h4 class="font-bold text-lg">Designer Boundary Wall</h4>
+                        <p class="text-sm text-blue-100">Aesthetic security solution</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-jrb-gray italic">*Representative images for project visualization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 section-divider">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-navy-800 mb-4 font-serif">Client Testimonials</h2>
+                <p class="text-lg text-jrb-gray max-w-2xl mx-auto">Real experiences from satisfied customers</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto" id="testimonials-container">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative border-2 border-blue-100">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                        <div class="w-12 h-12 bg-jrb-blue rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <blockquote class="text-lg md:text-xl text-navy-700 text-center leading-relaxed mb-8">
+                        "JRB Industries exceeded our expectations in every aspect. Their commitment to quality,
+                        environmental responsibility, and customer satisfaction is truly remarkable. The professional
+                        team ensured timely delivery of premium products at competitive prices. Their eco-friendly
+                        approach aligns perfectly with our values."
+                    </blockquote>
+
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 jrb-primary rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">
+                            R.M
+                        </div>
+                        <p class="font-bold text-navy-800 text-lg">Rameshan M.</p>
+                        <p class="text-jrb-gray">Project Manager, Chalakudy</p>
+                        <div class="flex justify-center mt-4">
+                            <div class="flex space-x-1">
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 section-divider jrb-secondary">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">Get in Touch</h2>
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto">Ready to start your project? Let's build something
+                    amazing together</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="glass-effect rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-white mb-6 font-serif">Send us a Message</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-blue-100 mb-2 font-medium">Full Name *</label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full px-4 py-3 rounded-lg bg-white/10 border border-blue-300/20 text-white placeholder-blue-200/50 focus:outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-300/50 transition-all"
+                                        placeholder="Your name">
+                                    <div class="error-message text-red-400 text-sm mt-1 hidden"></div>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-blue-100 mb-2 font-medium">Phone Number
+                                        *</label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full px-4 py-3 rounded-lg bg-white/10 border border-blue-300/20 text-white placeholder-blue-200/50 focus:outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-300/50 transition-all"
+                                        placeholder="Your phone">
+                                    <div class="error-message text-red-400 text-sm mt-1 hidden"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-blue-100 mb-2 font-medium">Email Address *</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-blue-300/20 text-white placeholder-blue-200/50 focus:outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-300/50 transition-all"
+                                    placeholder="your.email@example.com">
+                                <div class="error-message text-red-400 text-sm mt-1 hidden"></div>
+                            </div>
+                            <div>
+                                <label for="inquiry-type" class="block text-blue-100 mb-2 font-medium">Inquiry
+                                    Type</label>
+                                <select id="inquiry-type" name="inquiryType"
+                                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-blue-300/20 text-white focus:outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-300/50 transition-all">
+                                    <option value="quote" class="text-navy-800">Get a Quote</option>
+                                    <option value="general" class="text-navy-800">General Inquiry</option>
+                                    <option value="product" class="text-navy-800">Product Information</option>
+                                    <option value="support" class="text-navy-800">Technical Support</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-blue-100 mb-2 font-medium">Project Details
+                                    *</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="w-full px-4 py-3 rounded-lg bg-white/10 border border-blue-300/20 text-white placeholder-blue-200/50 focus:outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-300/50 transition-all resize-none"
+                                    placeholder="Tell us about your project requirements..."></textarea>
+                                <div class="error-message text-red-400 text-sm mt-1 hidden"></div>
+                            </div>
+                            <button type="submit" id="submit-btn"
+                                class="w-full btn-modern text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                                <span class="submit-text">Send Message</span>
+                                <span class="loading-text hidden">
+                                    <div class="spinner"></div>Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="glass-effect rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-white mb-6 font-serif">Visit Our Location</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 bg-jrb-blue rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Address</h4>
+                                    <p class="text-blue-100">Meloor, Chalakudy<br>Kerala 680311, India</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Phone</h4>
+                                    <p class="text-blue-100">+91 94476 72630</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div
+                                    class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1">Business Hours</h4>
+                                    <p class="text-blue-100">Open 24/7<br>Always available for you</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-effect rounded-2xl p-2 h-64">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.599999999999!2d76.33527777477501!3d10.29999999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080f0000000001%3A0x372888888888888a!2sJRB%20Industries%20Interlock%20Bricks!5e0!3m2!1sen!2sin!4v1628500000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="jrblogo.png" alt="JRB Industries Logo" class="h-20 w-auto">
+                        <div>
+                            <h3 class="text-xl font-bold font-serif">JRB Industries</h3>
+                            <p class="text-xs text-blue-300">TRUSTED PARTNER FOR YOUR PERFECT HOME</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li><a href="#home" class="hover:text-blue-300 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-blue-300 transition-colors">About Us</a></li>
+                        <li><a href="#products" class="hover:text-blue-300 transition-colors">Products</a></li>
+                        <li><a href="#gallery" class="hover:text-blue-300 transition-colors">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li>Cement Bricks</li>
+                        <li>Soil Bricks</li>
+                        <li>Custom Solutions</li>
+                        <li>Consultation</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li>Meloor, Chalakudy</li>
+                        <li>Kerala 680311</li>
+                        <li>+91 94476 72630</li>
+                        <li>24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-white/60">&copy; 2025 JRB Industries Interlock Bricks. All Rights Reserved. Built with
+                    passion for sustainable construction.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Configuration
+        const CONFIG = {
+            API_BASE_URL: window.location.hostname === 'localhost'
+                ? 'http://localhost:5000/api'
+                : '/api',
+            FORM_SUBMIT_TIMEOUT: 30000 // 30 seconds
+        };
+
+        // DOM Elements
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const header = document.getElementById('header');
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitText = submitBtn.querySelector('.submit-text');
+        const loadingText = submitBtn.querySelector('.loading-text');
+
+        // Mobile menu functionality
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(30, 41, 59, 0.95)';
+                header.style.backdropFilter = 'blur(20px)';
+            } else {
+                header.style.background = 'rgba(30, 41, 59, 0.9)';
+                header.style.backdropFilter = 'blur(15px)';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form validation
+        function validateForm(formData) {
+            const errors = {};
+
+            if (!formData.name || formData.name.trim().length < 2) {
+                errors.name = 'Name must be at least 2 characters long';
+            }
+
+            if (!formData.email || !isValidEmail(formData.email)) {
+                errors.email = 'Please enter a valid email address';
+            }
+
+            if (!formData.phone || !isValidPhone(formData.phone)) {
+                errors.phone = 'Please enter a valid phone number';
+            }
+
+            if (!formData.message || formData.message.trim().length < 10) {
+                errors.message = 'Message must be at least 10 characters long';
+            }
+
+            return errors;
+        }
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function isValidPhone(phone) {
+            return /^[\+]?[1-9][\d]{0,15}$/.test(phone.replace(/[\s\-\(\)]/g, ''));
+        }
+
+        function displayErrors(errors) {
+            // Clear all previous errors
+            document.querySelectorAll('.error-message').forEach(el => {
+                el.classList.add('hidden');
+                el.textContent = '';
+            });
+
+            // Display new errors
+            Object.keys(errors).forEach(field => {
+                const errorElement = document.querySelector(`#${field} + .error-message`);
+                if (errorElement) {
+                    errorElement.textContent = errors[field];
+                    errorElement.classList.remove('hidden');
+                }
+            });
+        }
+
+        // Notification system
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+
+            document.body.appendChild(notification);
+
+            // Show notification
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 100);
+
+            // Hide notification after 5 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 5000);
+        }
+
+        // Contact form submission
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                message: document.getElementById('message').value.trim(),
+                inquiryType: document.getElementById('inquiry-type').value
+            };
+
+            // Validate form
+            const errors = validateForm(formData);
+            if (Object.keys(errors).length > 0) {
+                displayErrors(errors);
+                showNotification('Please fix the errors in the form', 'error');
+                return;
+            }
+
+            // Clear errors
+            displayErrors({});
+
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.classList.add('loading');
+            submitText.classList.add('hidden');
+            loadingText.classList.remove('hidden');
+
+            try {
+                const response = await fetch(`${CONFIG.API_BASE_URL}/contact`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    showNotification(result.message || 'Thank you! Your message has been sent successfully.');
+                    contactForm.reset();
+                } else {
+                    throw new Error(result.message || 'Failed to send message');
+                }
+
+            } catch (error) {
+                console.error('Form submission error:', error);
+
+                if (error.message.includes('429') || error.message.includes('rate limit')) {
+                    showNotification('Too many requests. Please try again later.', 'error');
+                } else if (error.message.includes('network') || error.message.includes('fetch')) {
+                    showNotification('Network error. Please check your connection and try again.', 'error');
+                } else {
+                    showNotification(error.message || 'Failed to send message. Please try again.', 'error');
+                }
+            } finally {
+                // Reset loading state
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('loading');
+                submitText.classList.remove('hidden');
+                loadingText.classList.add('hidden');
+            }
+        });
+
+        // Product modal functionality
+        function openProductModal(productType) {
+            // This would open a modal with detailed product information
+            console.log('Opening product modal for:', productType);
+            showNotification('Product details coming soon!', 'success');
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observe elements for animation
+            document.querySelectorAll('.card-hover, .animate-slide-up').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease-out';
+                observer.observe(el);
+            });
+
+            console.log('JRB Industries website initialized successfully!');
+        });
+
+        // Error handling for offline functionality
+        window.addEventListener('online', () => {
+            showNotification('Connection restored', 'success');
+        });
+
+        window.addEventListener('offline', () => {
+            showNotification('You are offline. Some features may not work.', 'error');
+        });
+    </script>
+</body>
+
+</html>
